@@ -3,7 +3,7 @@ Debian 12 & Window 10 on MacbookPro 5.2 (2009)
 
 You can find a feedback about how I achieve to install dual boot with Debian 12 and Windows 10 on an old Macbook Pro 5.2 17'' (2009), after a lot of fails.
 
-Format your disk with MRB and not GPT, to force bios legacy install.
+Format your disk with MRB and not GPT, to force bios legacy install (for more information [https://www.antirandom.com/blog/2017/01/12/running-windows-10-on-an-older-macbook-pro/](https://www.antirandom.com/blog/2017/01/12/running-windows-10-on-an-older-macbook-pro/)
 
 Start by finding a CD/DVD for a bios legacy install of Windows 10. 
 
