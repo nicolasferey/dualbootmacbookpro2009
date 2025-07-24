@@ -1,6 +1,4 @@
 # dualbootmacbookpro2009
-Debian 12 & Window 10 on MacbookPro 5.2 (2009)
-
 You can find a feedback about how I achieve to install dual boot with Debian 12 and Windows 10 on an old Macbook Pro 5.2 17'' (2009), after a lot of fails.
 
 Format your disk with MRB and not GPT, to force bios legacy install (for more information [https://www.antirandom.com/blog/2017/01/12/running-windows-10-on-an-older-macbook-pro/](https://www.antirandom.com/blog/2017/01/12/running-windows-10-on-an-older-macbook-pro/)
@@ -25,17 +23,20 @@ Install the BT4322 firmware debian package and its depedency (available here)
 
 Install the compiled package dedicated for this specific computer
  - download the NVIDIA 340 Sebian package in /nvidia 
- - add this line in /etc/apt/sources.list
+ - add this line in ```/etc/apt/sources.list```
  - sudo apt update
- - sudo apt install nvidia-legacy-340xx-driver nvidia-settings-legacy-340xx
-# If the above line doesn't work try with
-# sudo apt install --no-install-recommends --no-install-suggests nvidia-legacy-340xx-driver nvidia-settings-legacy-340xx libgles1-nvidia-legacy-340xx libgles2-nvidia-legacy-340xx
+ - ```sudo apt install nvidia-legacy-340xx-driver nvidia-settings-legacy-340xx```
+If the above line doesn't work try with
+```sudo apt install --no-install-recommends --no-install-suggests nvidia-legacy-340xx-driver nvidia-settings-legacy-340xx libgles1-nvidia-legacy-340xx libgles2-nvidia-legacy-340xx```
 
 Delete the previous video drivers, at least nouveau driver 
-sudo apt autoremove xserver-xorg-video-nouveau
+'''sudo apt autoremove xserver-xorg-video-nouveau'''
+
+Add ```deb [trusted=yes] file:/nvidia ./``` to ```/etc/apt/sources.list```
+Enable ```contrib``` in your ```/etc/apt/sources.list```.
 
 Create and edit with the following content X server configuration file /etc/X11/xorg.conf (that you can improve after) :
-
+```
 Section "Device"
     Identifier     "Device0"
     Driver         "nvidia"
@@ -45,12 +46,8 @@ EndSection
 Section "ServerFlags"
     Option         "IgnoreABI" "1"
 EndSection
-
-
-
+```
 Normally when you reboot you should see the NVidia splash screen 
-
-
 
 If you want to recompile the driver [(https://gist.github.com/Anakiev2/b828ed2972c04359d52a44e9e5cf2c63](https://gist.github.com/Anakiev2/b828ed2972c04359d52a44e9e5cf2c63)
 
