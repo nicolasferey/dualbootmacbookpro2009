@@ -15,7 +15,46 @@ Why bios legacy? because of it's the only (simple) way to install the boocamp dr
 
 Website for Bootcamp Windows 10 driver for Macbook Pro 5.2 : [https://www.driverscape.com/manufacturers/apple/laptops-desktops/macbookpro5%2C2/19724](https://www.driverscape.com/manufacturers/apple/laptops-desktops/macbookpro5%2C2/19724)
 
-Install Debian 12, in expert mode, do not force EFI Mode, do not install bootloader grub. I recommand a light desktop manager of Debian, like XFCE
+Install Debian 12 in expert mode, 
+
+- use the install tools to create swap and / partition (eventually /home or others)
+- do not force EFI Mode
+- do not install bootloader grub. I recommand a light desktop manager of Debian, like XFCE
+
+Install the BT4322 firmware debian package and its depedency (available here)
+
+Install the compiled package dedicated for this specific computer
+ - download the NVIDIA 340 Sebian package in /nvidia 
+ - add this line in /etc/apt/sources.list
+ - sudo apt update
+ - sudo apt install nvidia-legacy-340xx-driver nvidia-settings-legacy-340xx
+# If the above line doesn't work try with
+# sudo apt install --no-install-recommends --no-install-suggests nvidia-legacy-340xx-driver nvidia-settings-legacy-340xx libgles1-nvidia-legacy-340xx libgles2-nvidia-legacy-340xx
+
+Delete the previous video drivers, at least nouveau driver 
+sudo apt autoremove xserver-xorg-video-nouveau
+
+Create and edit with the following content X server configuration file /etc/X11/xorg.conf (that you can improve after) :
+
+Section "Device"
+    Identifier     "Device0"
+    Driver         "nvidia"
+    VendorName     "NVIDIA Corporation"
+EndSection
+
+Section "ServerFlags"
+    Option         "IgnoreABI" "1"
+EndSection
+
+
+
+Normally when you reboot you should see the NVidia splash screen 
+
+
+
+If you want to recompile the driver [(https://gist.github.com/Anakiev2/b828ed2972c04359d52a44e9e5cf2c63](https://gist.github.com/Anakiev2/b828ed2972c04359d52a44e9e5cf2c63)
+
+
 
 
 
