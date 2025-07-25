@@ -1,7 +1,16 @@
 # dualbootmacbookpro2009
+
+#Dual boot Windows 10 / Debian 12 sur Macbook Pro 5.2 17" (mi 2009)  
+
 You can find a feedback about how I achieve to install dual boot with Debian 12 and Windows 10 on an old Macbook Pro 5.2 17'' (2009), after a lot of fails.
 
+##Format your disk
+
 Format your disk with MRB and not GPT, to force bios legacy install (for more information [https://www.antirandom.com/blog/2017/01/12/running-windows-10-on-an-older-macbook-pro/](https://www.antirandom.com/blog/2017/01/12/running-windows-10-on-an-older-macbook-pro/)
+
+Why bios legacy? because of it's the only (simple) way to install the boocamp driver after Windows 10 setup (without bootcamp), especially for NVidia 9600M GT driver. There is a way install it using EFI but it's for experimented users (see there for details [https://superuser.com/questions/671660/graphics-card-not-working-on-windows-8-1-on-mac](https://superuser.com/questions/671660/graphics-card-not-working-on-windows-8-1-on-mac).
+
+##Install Windows
 
 Start by finding a CD/DVD for a bios legacy install of Windows 10. 
 
@@ -9,23 +18,28 @@ Create a windows partition inside the Windows 10 installation tools. Be carreffu
 
 You can install now or later bootcamp driver using Compatibility Mode Windows 2007. Nvidia drivers are ok, on the contrary to a EFI boot install of Windows 10, the necessite a lot a complicated tweek to make it works. 
 
-Why bios legacy? because of it's the only (simple) way to install the boocamp driver, especially for NVidia 9600M GT (and on chip 9400M) driver using driver. There is a way to install using EFI but it's for experimented users (see there for details ).
-
 Website for Bootcamp Windows 10 driver for Macbook Pro 5.2 : [https://www.driverscape.com/manufacturers/apple/laptops-desktops/macbookpro5%2C2/19724](https://www.driverscape.com/manufacturers/apple/laptops-desktops/macbookpro5%2C2/19724)
 
-Install Debian 12 in expert mode, 
+Chack that Windows boot correctly using the ```alt``` or ```option``` key before starting 
 
-- use the install tools to create swap and / partition (eventually /home or others)
-- do not force EFI Mode
-- do not install bootloader grub. I recommand a light desktop manager of Debian, like XFCE
+##Install Debian 12 in expert mode
 
-Install the BT4322 firmware debian package and its depedency (available here)
+###Base installation
 
-Install the compiled package dedicated for this specific computer
- - download the NVIDIA 340 Sebian package in /nvidia 
- - add this line in ```/etc/apt/sources.list```
- - sudo apt update
+- use the install tools to create swap and ```/``` partition (eventually ```/home``` or others)
+- DO NOT force EFI Mode
+- you can avoid to install grub, anyway the computer will don't boot on windows before manually configuring grub2 under Debian 12 
+- I recommand a light desktop manager of Debian, like XFCE
+
+###Install the Wifi BT4322 firmware debian package and its depedency (available here)
+
+###Install the NVidia 340 firmware debian package (nvidia-legacy-340...) and its depedency (available here) for this specific computer
+ - download the NVIDIA 340 Debian compiled packages in /nvidia (available in repository)
+ - add this line in ```deb [trusted=yes] file:/nvidia ./``` in ```/etc/apt/sources.list```
+ - check that contrib packages are (the work contrib appear a the end of lines of your ```/etc/apt/sources.list``` ) 
+ - ```sudo apt update```
  - ```sudo apt install nvidia-legacy-340xx-driver nvidia-settings-legacy-340xx```
+ - 
 If the above line doesn't work try with
 ```sudo apt install --no-install-recommends --no-install-suggests nvidia-legacy-340xx-driver nvidia-settings-legacy-340xx libgles1-nvidia-legacy-340xx libgles2-nvidia-legacy-340xx```
 
