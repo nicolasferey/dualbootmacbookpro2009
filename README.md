@@ -4,9 +4,9 @@ You can find a feedback about how I achieve to install dual boot with Debian 12 
 
 ## Format your disk
 
-Format your disk with MRB and not GPT, to force bios legacy install (for more information [https://www.antirandom.com/blog/2017/01/12/running-windows-10-on-an-older-macbook-pro/](https://www.antirandom.com/blog/2017/01/12/running-windows-10-on-an-older-macbook-pro/)
+Format your disk with MRB and not GPT, to force bios legacy install (for more information [https://www.antirandom.com/blog/2017/01/12/running-windows-10-on-an-older-macbook-pro/](https://www.antirandom.com/blog/2017/01/12/running-windows-10-on-an-older-macbook-pro/)).
 
-Why bios legacy? because of it's the only (simple) way to install the boocamp driver after Windows 10 setup (without bootcamp), especially for NVidia 9600M GT driver. There is a way install it using EFI but it's for experimented users (see there for details [https://superuser.com/questions/671660/graphics-card-not-working-on-windows-8-1-on-mac](https://superuser.com/questions/671660/graphics-card-not-working-on-windows-8-1-on-mac).
+Why bios legacy? because of it's the only (simple) way to install the boocamp driver after Windows 10 setup (without bootcamp neither MacOS), especially for NVidia 9600M GT driver. There is a way install it using EFI but it's for experimented users (see there for details [https://superuser.com/questions/671660/graphics-card-not-working-on-windows-8-1-on-mac](https://superuser.com/questions/671660/graphics-card-not-working-on-windows-8-1-on-mac).
 
 ## Install Windows
 
@@ -16,11 +16,13 @@ Create a windows partition inside the Windows 10 installation tools. Be carreffu
 
 You can install now or later bootcamp driver using Compatibility Mode Windows 2007. Nvidia drivers are ok, on the contrary to a EFI boot install of Windows 10, the necessite a lot a complicated tweek to make it works. 
 
-Website for Bootcamp Windows 10 driver for Macbook Pro 5.2 : [https://www.driverscape.com/manufacturers/apple/laptops-desktops/macbookpro5%2C2/19724](https://www.driverscape.com/manufacturers/apple/laptops-desktops/macbookpro5%2C2/19724)
+Website for Bootcamp Windows 10 driver for Macbook Pro 5.2 : [https://www.driverscape.com/manufacturers/apple/laptops-desktops/macbookpro5%2C2/19724](https://www.driverscape.com/manufacturers/apple/laptops-desktops/macbookpro5%2C2/19724) or the excellent project Brigadier [https://github.com/timsutton/brigadier](https://github.com/timsutton/brigadier).
 
-Chack that Windows boot correctly using the ```alt``` or ```option``` key before starting 
+Check that Windows boot correctly using the ```alt``` or ```option``` key before starting.
 
+## Create a boot loader rEFInd for secure boot before installing Debian 12
 
+It's strongly advice to set up a USB key with et rEFIng boot loader [https://www.rodsbooks.com/refind/](https://www.rodsbooks.com/refind/) as secure boot, to be able to boot in case of erasing of windows boot loader or to correct grub boot loader mistakes on Debian 12.
 
 ## Install Debian 12 in expert mode
 
@@ -44,13 +46,11 @@ If the above line doesn't work try with
 ```sudo apt install --no-install-recommends --no-install-suggests nvidia-legacy-340xx-driver nvidia-settings-legacy-340xx libgles1-nvidia-legacy-340xx libgles2-nvidia-legacy-340xx```
 
 Delete the previous video drivers, at least nouveau driver 
-'''sudo apt autoremove xserver-xorg-video-nouveau'''
-
-Create and edit with the following content X server configuration file /etc/X11/xorg.conf (that you can improve after) :
+```sudo apt autoremove xserver-xorg-video-nouveau```
 
 ### Install the X server
 
-Create and install the following line in the ``` ```
+Create and edit with the following content X server configuration file ```/etc/X11/xorg.conf``` (that you can improve after) :
 ```
 Section "Device"
     Identifier     "Device0"
