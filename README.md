@@ -61,7 +61,20 @@ For installing grub, remove all version of grub, and install grub2
 - ```sudo apt remove grub``
 - ```sudo apt install grub2``
 
-Configure your grub to boot Windows 10 and Debian 12 and other things if you want 
+Configure your grub to boot Windows 10 and Debian 12 and other things if you want in the ```/boot/grub/grub.conf```
+
+menuentry 'Debian GNU/Linux, kernel 2.6.26-2-amd64' {
+  set root='(hd0,3)'; set legacy_hdbias='0'
+  legacy_kernel   '/boot/vmlinuz-6.1.0-37-amd64' '/boot/vmlinuz-6.1.0-37-amd64' 'root=/dev/sda3' 'ro' 'quiet'
+  legacy_initrd '/boot/initrd.img-6.1.0-37-amd64' '/boot/initrd.img-6.1.0-37-amd64'
+}
+
+menuentry 'Microsoft Windows 10 Professionnel' {
+  set root='(hd0,1)'; set legacy_hdbias='0'
+  chainloader  '+1'
+}
+
+
 
 
 
