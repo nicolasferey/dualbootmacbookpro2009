@@ -56,17 +56,18 @@ If you reboot you should see Wifi network somewhere in your desktop manager.
 
 ### Install grub2
 
-I STRONGLY RECOMMAND TO HAVE A rEFInd USB AND CHECK IT WORKS BEFORE INSTALLING GRUB2 BOOT LOADER. 
+I STRONGLY RECOMMAND TO HAVE A rEFInd USB KEY AND CHECK IT WORKS BEFORE INSTALLING GRUB2 BOOT LOADER. 
 
-For installing grub, remove all version of grub, and install grub2.
+For installing grub2, remove all version of grub, and install grub2.
 
 - ```sudo apt remove grub``
 - ```sudo apt install grub2``
 
-Configure your grub to boot Windows 10 and Debian 12 and other things if you want in the ```/boot/grub/grub.conf```
+Configure (I prefer to do it manually) your grub to boot Windows 10 and Debian 12 and other things if you want in the ```/boot/grub/grub.conf```
 
-YOU HAVE TO ADAPT TO YOUR CONFIGURATION. For me I've one disk (hd0) and the 1st partition is the windows boot pertion (second entry of the nex example).
-Debian is set up for me on the 3rd partition (the partition where is mounted ```/```). 
+YOU HAVE TO ADAPT THE FOLLOWING EXAMPLE TO YOUR CONFIGURATION. For me I've one disk (hd0) and the 1st partition is the windows boot petition (second entry of the next example).
+Debian is set up for me on the 3rd partition  where is mounted ```/``` (hda0, 3) and so ```/dev/sda3``` for root (```root=/dev/sda3```). You just have to get the name of the kernel and its place ```/boot/vmlinuz-6.1.0-37-amd64```.
+
 ```
 menuentry 'Debian GNU/Linux, kernel 2.6.26-2-amd64' {
   set root='(hd0,3)'; set legacy_hdbias='0'
