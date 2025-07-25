@@ -22,7 +22,7 @@ Check that Windows boot correctly using the ```alt``` or ```option``` key before
 
 ## Create a boot loader rEFInd for secure boot before installing Debian 12
 
-It's strongly advice to set up a USB key with et rEFIng boot loader [https://www.rodsbooks.com/refind/](https://www.rodsbooks.com/refind/) as secure boot, to be able to boot in case of erasing of windows boot loader or to correct grub boot loader mistakes on Debian 12.
+It's strongly advice to set up a USB key with et rEFInd boot loader [https://www.rodsbooks.com/refind/](https://www.rodsbooks.com/refind/) as secure boot, to be able to boot in case of erasing of windows boot loader or to correct grub boot loader mistakes on Debian 12.
 
 ## Install Debian 12 in expert mode
 
