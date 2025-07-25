@@ -56,13 +56,17 @@ If you reboot you should see Wifi network somewhere in your desktop manager.
 
 ### Install grub2
 
-For installing grub, remove all version of grub, and install grub2
+I STRONGLY RECOMMAND TO HAVE A rEFInd USB AND CHECK IT WORKS BEFORE INSTALLING GRUB2 BOOT LOADER. 
+
+For installing grub, remove all version of grub, and install grub2.
 
 - ```sudo apt remove grub``
 - ```sudo apt install grub2``
 
 Configure your grub to boot Windows 10 and Debian 12 and other things if you want in the ```/boot/grub/grub.conf```
 
+YOU HAVE TO ADAPT TO YOUR CONFIGURATION. For me I've one disk (hd0) and the 1st partition is the windows boot pertion (second entry of the nex example).
+Debian is set up for me on the 3rd partition (the partition where is mounted ```/```). 
 ```
 menuentry 'Debian GNU/Linux, kernel 2.6.26-2-amd64' {
   set root='(hd0,3)'; set legacy_hdbias='0'
@@ -75,12 +79,6 @@ menuentry 'Microsoft Windows 10 Professionnel' {
   chainloader  '+1'
 }
 ```
-
-
-
-
-
-
 
 ### Install the NVidia 340 firmware debian package (nvidia-legacy-340...) and its depedency (available here) for this specific computer
  - download the NVIDIA 340 Debian compiled packages in /nvidia (available in repository)
