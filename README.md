@@ -35,7 +35,7 @@ It's strongly advice to set up a USB key with et rEFIng boot loader [https://www
 
 ### Install the Wifi BT4322 firmware debian package and its depedency (available here)
 
-Copy the 3 files aboot wifi driver BT4322 available in the repository in a directory, go to the directory, and : 
+Copy the files about the wifi driver BT4322 available in the repository in a directory, go to the directory, and : 
 - ```sudo dpkg -i b43-fwcutter_019-14_amd64.deb```
 - ```sudo dpkg -i firmware-b43-installer_019-14_all.deb```
 
@@ -67,6 +67,8 @@ If the above line doesn't work try with
 Delete the previous video drivers, at least nouveau driver 
 ```sudo apt autoremove xserver-xorg-video-nouveau```
 
+If you want to recompile the driver [(https://gist.github.com/Anakiev2/b828ed2972c04359d52a44e9e5cf2c63](https://gist.github.com/Anakiev2/b828ed2972c04359d52a44e9e5cf2c63)
+
 ### Install the X server
 
 Create and edit with the following content X server configuration file ```/etc/X11/xorg.conf``` (that you can improve after) :
@@ -83,7 +85,6 @@ EndSection
 ```
 Normally when you reboot you should see the NVidia splash screen 
 
-If you want to recompile the driver [(https://gist.github.com/Anakiev2/b828ed2972c04359d52a44e9e5cf2c63](https://gist.github.com/Anakiev2/b828ed2972c04359d52a44e9e5cf2c63)
 
 
 
