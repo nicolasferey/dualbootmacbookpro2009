@@ -20,6 +20,8 @@ Website for Bootcamp Windows 10 driver for Macbook Pro 5.2 : [https://www.driver
 
 Chack that Windows boot correctly using the ```alt``` or ```option``` key before starting 
 
+
+
 ## Install Debian 12 in expert mode
 
 ### Base installation
@@ -44,10 +46,11 @@ If the above line doesn't work try with
 Delete the previous video drivers, at least nouveau driver 
 '''sudo apt autoremove xserver-xorg-video-nouveau'''
 
-Add ```deb [trusted=yes] file:/nvidia ./``` to ```/etc/apt/sources.list```
-Enable ```contrib``` in your ```/etc/apt/sources.list```.
-
 Create and edit with the following content X server configuration file /etc/X11/xorg.conf (that you can improve after) :
+
+### Install the X server
+
+Create and install the following line in the ``` ```
 ```
 Section "Device"
     Identifier     "Device0"
