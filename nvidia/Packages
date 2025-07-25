@@ -1,0 +1,1061 @@
+Package: libegl1-nvidia-legacy-340xx
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 1064
+Depends: nvidia-legacy-340xx-alternative (= 340.108-25), libnvidia-legacy-340xx-eglcore (= 340.108-25), libc6 (>= 2.34)
+Filename: ./libegl1-nvidia-legacy-340xx_340.108-25_amd64.deb
+Size: 223108
+MD5sum: c47aa3f0392fef26cef003abba752e40
+SHA1: c0b94f66109307791b291cf8dc70d2439a2b9cae
+SHA256: 51e5c9fa1b128d4d17a32d9870353be49c60c25d7e17f0625170b63b8ab4fc09
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.nvidia.com
+Description: NVIDIA binary EGL library (340xx legacy version)
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ See the description of the nvidia-legacy-340xx-driver package
+ or /usr/share/doc/libgl1-nvidia-legacy-340xx-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ This package contains the driver specific binary EGL implementation provided
+ by NVIDIA.
+
+Package: libgl1-nvidia-legacy-340xx-glx
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 1560
+Pre-Depends: nvidia-installer-cleanup
+Depends: nvidia-legacy-340xx-alternative (= 340.108-25), libnvidia-legacy-340xx-glcore (= 340.108-25), nvidia-support, libc6 (>= 2.2.5), libx11-6, libxext6
+Recommends: nvidia-legacy-340xx-kernel-dkms (= 340.108-25) | nvidia-legacy-340xx-kernel-340.108
+Suggests: nvidia-legacy-340xx-kernel-dkms (>= 340.108) | nvidia-legacy-340xx-kernel-source (>= 340.108)
+Provides: libgl1-nvidia-glx-any
+Filename: ./libgl1-nvidia-legacy-340xx-glx_340.108-25_amd64.deb
+Size: 462168
+MD5sum: 55f2540c77434ebc8149b5ae293937f9
+SHA1: a4725bfb01ecc349e81b44efd8db679ea489282d
+SHA256: 30f30228abfa434d477c2741d1e08dcce20be4d7e91f6c48fec7caf16766ac5d
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.nvidia.com
+Description: NVIDIA binary OpenGL/GLX library (340xx legacy version)
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ See the description of the nvidia-legacy-340xx-driver package
+ or /usr/share/doc/libgl1-nvidia-legacy-340xx-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ This package contains the driver specific binary OpenGL/GLX implementation
+ provided by NVIDIA.
+
+Package: libgles1-nvidia-legacy-340xx
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 149
+Depends: nvidia-legacy-340xx-alternative (= 340.108-25), libnvidia-legacy-340xx-eglcore (= 340.108-25), libc6 (>= 2.2.5)
+Filename: ./libgles1-nvidia-legacy-340xx_340.108-25_amd64.deb
+Size: 87100
+MD5sum: 191001e43150460068d5cd327cd389cd
+SHA1: db7bd9ecd1014572fead806a4e1a5d8c8d5d90bb
+SHA256: bc6991c990ecc93e9114b6e406fea4b1a0971a07bfd49229ec0807231d6eb3b9
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.nvidia.com
+Description: NVIDIA binary OpenGL|ES 1.x library (340xx legacy version)
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 1.x provides an API for fixed-function hardware.
+ .
+ See the description of the nvidia-legacy-340xx-driver package
+ or /usr/share/doc/libgl1-nvidia-legacy-340xx-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+
+Package: libgles2-nvidia-legacy-340xx
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 166
+Depends: nvidia-legacy-340xx-alternative (= 340.108-25), libnvidia-legacy-340xx-eglcore (= 340.108-25), libc6 (>= 2.2.5)
+Filename: ./libgles2-nvidia-legacy-340xx_340.108-25_amd64.deb
+Size: 89632
+MD5sum: 96e1353030a437b2f620cbdcf31fe165
+SHA1: 8d03360b8323824f3ec7e73f5b4e1241d16ac18c
+SHA256: fdf91654c457b159f248d7306b4b42412be4cb115f7928446625174d5cb6840c
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.nvidia.com
+Description: NVIDIA binary OpenGL|ES 2.x library (340xx legacy version)
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 2.x provides an API for programmable hardware including vertex
+ and fragment shaders.
+ .
+ See the description of the nvidia-legacy-340xx-driver package
+ or /usr/share/doc/libgl1-nvidia-legacy-340xx-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+
+Package: libnvidia-legacy-340xx-cfg1
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 258
+Depends: nvidia-legacy-340xx-alternative (= 340.108-25), libc6 (>= 2.2.5)
+Breaks: libgl1-nvidia-legacy-340xx-glx (<< 340.96-8~)
+Replaces: libgl1-nvidia-legacy-340xx-glx (<< 340.96-8~)
+Provides: libnvidia-cfg.so.1 (= 340.108), libnvidia-cfg1-any
+Filename: ./libnvidia-legacy-340xx-cfg1_340.108-25_amd64.deb
+Size: 128252
+MD5sum: c1cc324aa9229a2c89b1e1c1b8eb46ce
+SHA1: 6b3031d855c85ab690e4f567cbe1a63fb1aa90aa
+SHA256: d1378655079448d43f864859bc069eed57d392ae57e10367f3dae6caf5742aaf
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.nvidia.com
+Description: NVIDIA binary OpenGL/GLX configuration library (340xx legacy version)
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ This package contains the libnvidia-cfg.so.1 runtime library.
+
+Package: libnvidia-legacy-340xx-compiler
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 24725
+Depends: libc6 (>= 2.2.5)
+Conflicts: libnvidia-compiler-340.108
+Provides: libnvidia-compiler-340.108
+Filename: ./libnvidia-legacy-340xx-compiler_340.108-25_amd64.deb
+Size: 6287132
+MD5sum: f1f9dd7f89e5f6e473749251af771b27
+SHA1: 22be5af10883f8f20d508e4724ba72cce702d946
+SHA256: 41b85405e429924c7fd31a4a04b38a6c2489896a2bdc015880f9e4a27d5c3a41
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.nvidia.com
+Description: NVIDIA runtime compiler library (340xx legacy version)
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the runtime compiler library.
+
+Package: libnvidia-legacy-340xx-cuda1
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 13793
+Depends: nvidia-support, nvidia-legacy-340xx-alternative (= 340.108-25), libc6 (>= 2.34)
+Recommends: nvidia-legacy-340xx-kernel-dkms (= 340.108-25) | nvidia-legacy-340xx-kernel-340.108, nvidia-legacy-340xx-smi, nvidia-persistenced, libnvidia-legacy-340xx-cuda1-i386
+Suggests: nvidia-cuda-mps, nvidia-legacy-340xx-kernel-dkms (>= 340.108) | nvidia-legacy-340xx-kernel-source (>= 340.108)
+Provides: libcuda-5.0-1, libcuda-5.5-1, libcuda-6.0-1, libcuda-6.5-1, libcuda.so.1 (= 340.108), libcuda1-any
+Filename: ./libnvidia-legacy-340xx-cuda1_340.108-25_amd64.deb
+Size: 4412484
+MD5sum: d9e636255336cd6dc37b54634b8bfaf1
+SHA1: ea5a39464a2ad623da7871fe988723c32030e305
+SHA256: 5b907017118879efd7ac32af1764cd1e0e7dd4011eecac55063f9dd43bf84779
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.nvidia.com/CUDA
+Description: NVIDIA CUDA Driver Library (340xx legacy version)
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the CUDA Driver API library for low-level CUDA
+ programming.
+ .
+ Supported NVIDIA devices include GPUs starting from GeForce 8 and Quadro FX
+ series, as well as the Tesla computing processors.
+ .
+ Please see the nvidia-legacy-340xx-kernel-dkms or
+ nvidia-legacy-340xx-kernel-source packages
+ for building the kernel module required by this package.
+ This will provide nvidia-legacy-340xx-kernel-340.108.
+
+Package: libnvidia-legacy-340xx-eglcore
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 42080
+Depends: libc6 (>= 2.2.5), libx11-6, libxext6
+Conflicts: libnvidia-eglcore-340.108
+Provides: libnvidia-eglcore-340.108
+Filename: ./libnvidia-legacy-340xx-eglcore_340.108-25_amd64.deb
+Size: 6965504
+MD5sum: e5b3561dcc867213485f813baf49ab5e
+SHA1: 73daa17a19afc55ba618d0f0bb48e81e170073c6
+SHA256: f675448f242fce50f7603ea80f4274be2aa06b45f282039d090cfabbdd77fe92
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.nvidia.com
+Description: NVIDIA binary EGL core libraries (340xx legacy version)
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ This package contains the private core libraries used by the NVIDIA
+ implementation of EGL and OpenGL|ES.
+
+Package: libnvidia-legacy-340xx-encode1
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 258
+Depends: libnvidia-legacy-340xx-cuda1 (= 340.108-25), libc6 (>= 2.2.5), libnvidia-legacy-340xx-nvcuvid1 (>= 260)
+Filename: ./libnvidia-legacy-340xx-encode1_340.108-25_amd64.deb
+Size: 115828
+MD5sum: ced8458defddabf281a6ac5b5c0c630f
+SHA1: 5059a61eabcc9b83a10ef90ecc4421e401d1e42a
+SHA256: de7d58274911b71cecaff9263e0ee40c53ceb1a7484312242f2dcc44741f5526
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.nvidia.com
+Description: NVENC Video Encoding runtime library (340xx legacy version)
+ The NVENC Video Encoding library provides an interface to video encoder
+ hardware on supported NVIDIA GPUs.
+ .
+ This package contains the nvidia-encode runtime library.
+
+Package: libnvidia-legacy-340xx-fbc1
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 185
+Depends: libnvidia-legacy-340xx-cuda1 (= 340.108-25), libc6 (>= 2.2.5), libgl1-mesa-glx | libgl1, libx11-6, libxext6
+Filename: ./libnvidia-legacy-340xx-fbc1_340.108-25_amd64.deb
+Size: 96764
+MD5sum: 782582ac94b48a81e715142cf60275ab
+SHA1: cc6eefa9f447b718aed902324c372af7a3f3424d
+SHA256: ab7ba1c2c0a19683e8f95e24572c12c2ab3e182601c16e8054520457a257cc43
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.nvidia.com
+Description: NVIDIA OpenGL-based Framebuffer Capture runtime library (340xx legacy version)
+ The NVIDIA OpenGL-based Framebuffer Capture (NvFBCOpenGL) library provides
+ a high performance, low latency interface to capture and optionally encode an
+ OpenGL framebuffer. NvFBCOpenGL is a private API that is only available to
+ approved partners for use in remote graphics scenarios.
+ .
+ This package contains the NvFBCOpenGL runtime library.
+
+Package: libnvidia-legacy-340xx-glcore
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 43086
+Depends: libc6 (>= 2.2.5)
+Conflicts: libgl1-nvidia-glx-340.108, libnvidia-glcore-340.108
+Breaks: libgl1-nvidia-legacy-340xx-glx (<< 340.96-8~)
+Replaces: libgl1-nvidia-legacy-340xx-glx (<< 340.96-8~)
+Provides: libnvidia-glcore-340.108
+Filename: ./libnvidia-legacy-340xx-glcore_340.108-25_amd64.deb
+Size: 6995088
+MD5sum: 97af543b2dfc5e6a980740f770e9e41b
+SHA1: f547373ed84a411485e0b93e3992dea02987b4c1
+SHA256: a0e30a513f0d0ef751490391f909e1189eb71a3850028ca1926b290a75d28c5e
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.nvidia.com
+Description: NVIDIA binary OpenGL/GLX core libraries (340xx legacy version)
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ This package contains the private core libraries used by the NVIDIA
+ implementation of OpenGL and GLX.
+
+Package: libnvidia-legacy-340xx-ifr1
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 275
+Depends: libnvidia-legacy-340xx-cuda1 (= 340.108-25), libc6 (>= 2.2.5), libgl1-mesa-glx | libgl1, libx11-6
+Filename: ./libnvidia-legacy-340xx-ifr1_340.108-25_amd64.deb
+Size: 125656
+MD5sum: 5bd528a6ddec6bdc1c76f67cd4d83f48
+SHA1: af1d44300c4bbed817b2036785e9f556f354e6ae
+SHA256: 2efc8df234bae829156f0b90b1902970d6a58f49f9c476a47d9c6c2bcd03eec3
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.nvidia.com
+Description: NVIDIA OpenGL-based Inband Frame Readback runtime library (340xx legacy)
+ The NVIDIA OpenGL-based Inband Frame Readback (NvIFROpenGL) library provides
+ a high performance, low latency interface to capture and optionally encode an
+ OpenGL framebuffer. NvIFROpenGL is a private API that is only available to
+ approved partners for use in remote graphics scenarios.
+ .
+ This package contains the NvIFROpenGL runtime library.
+
+Package: libnvidia-legacy-340xx-ml1
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 965
+Depends: nvidia-legacy-340xx-alternative (= 340.108-25), libc6 (>= 2.34)
+Breaks: nvidia-smi (<< 302.17-3)
+Provides: libnvidia-ml.so.1 (= 340.108)
+Filename: ./libnvidia-legacy-340xx-ml1_340.108-25_amd64.deb
+Size: 351304
+MD5sum: eb51d9535d8f1da73d9c0a0d38999d7b
+SHA1: 7fce34a70a25251d237b0129824bccf7f2749b6d
+SHA256: 714be0f73f93565a129066a278c6d884ead9e9e89d0ec7f668acad6819442c87
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://developer.nvidia.com/nvidia-management-library-NVML
+Description: NVIDIA Management Library (NVML) runtime library (340xx legacy version)
+ The NVIDIA Management Library (NVML) provides a monitoring and management API.
+ It provides a direct access to the queries and commands exposed via nvidia-smi.
+ .
+ This package contains the nvidia-ml runtime library.
+
+Package: libnvidia-legacy-340xx-nvcuvid1
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 2749
+Depends: libnvidia-legacy-340xx-cuda1 (= 340.108-25), libc6 (>= 2.2.5)
+Filename: ./libnvidia-legacy-340xx-nvcuvid1_340.108-25_amd64.deb
+Size: 745624
+MD5sum: 9a020b7fb22cd446a848fe9daa3a1903
+SHA1: 59dc90c9cf5e71dc79dbb73f0f05c33df495f55c
+SHA256: 8418f8815a3fafe0394f3c88d2c1f8c247054531e28c833801d0ba598675f27c
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.nvidia.com
+Description: NVIDIA CUDA Video Decoder runtime library (340xx legacy version)
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ The NVIDIA CUDA Video Decoder (NVCUVID) library provides an interface to
+ hardware video decoding capabilities on NVIDIA GPUs with CUDA.
+ .
+ This package contains the nvcuvid runtime library.
+
+Package: nvidia-legacy-340xx-alternative
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 116
+Pre-Depends: dpkg (>= 1.17.21)
+Depends: glx-alternative-nvidia (>= 0.7)
+Conflicts: nvidia-alternative, nvidia-alternative-any
+Provides: nvidia-alternative-any, nvidia-legacy-340xx-alternative--kmod-alias
+Filename: ./nvidia-legacy-340xx-alternative_340.108-25_amd64.deb
+Size: 73296
+MD5sum: 62c06690d57a7536d63651cbf9147632
+SHA1: 3b36df29c343e0e9e8cddcd75bedc35b07c60843
+SHA256: 54d70a2887a31640a613995266a1391b3d6ac6d379c7dcf851f3709a6d519651
+Section: non-free/libs
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.nvidia.com
+Description: allows the selection of NVIDIA as GLX provider (340xx legacy version)
+ In setups with several NVIDIA driver versions installed (e.g. current and
+ legacy) this metapackage registers an alternative to allow easy switching
+ between the different versions.
+ .
+ Use 'update-glx --config nvidia' to select a version.
+ .
+ This package does not depend on the corresponding NVIDIA libraries.
+ In order to install the NVIDIA driver and libraries, install the
+ nvidia-legacy-340xx-driver package instead.
+
+Package: nvidia-legacy-340xx-driver
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 1000
+Pre-Depends: nvidia-installer-cleanup
+Depends: nvidia-legacy-340xx-driver-libs (= 340.108-25), nvidia-legacy-340xx-driver-bin (= 340.108-25), xserver-xorg-video-nvidia-legacy-340xx (= 340.108-25), nvidia-legacy-340xx-vdpau-driver (= 340.108-25), nvidia-legacy-340xx-alternative (= 340.108-25), nvidia-legacy-340xx-kernel-dkms (= 340.108-25) | nvidia-legacy-340xx-kernel-340.108, nvidia-support
+Recommends: nvidia-settings-legacy-340xx (>= 340), nvidia-persistenced
+Suggests: nvidia-legacy-340xx-kernel-dkms (>= 340.108) | nvidia-legacy-340xx-kernel-source (>= 340.108)
+Provides: nvidia-driver-any, nvidia-glx-any
+Filename: ./nvidia-legacy-340xx-driver_340.108-25_amd64.deb
+Size: 357504
+MD5sum: d920cb72cd1a8b6fd8b829bf48e3f008
+SHA1: a9f406f08c62c2cf6c5e73565f265615fbfe7b4e
+SHA256: 58e8eb79e0e002cbdf779fcb7ef93495fac8059b97fbc2356365e5ea28e1cf6b
+Section: non-free/x11
+Priority: optional
+Homepage: https://www.nvidia.com
+Description: NVIDIA metapackage (340xx legacy version)
+ This metapackage depends on the NVIDIA binary driver and libraries
+ that provide optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server.
+ .
+ Please see the nvidia-legacy-340xx-kernel-dkms or
+ nvidia-legacy-340xx-kernel-source packages
+ for building the kernel module required by this package.
+ This will provide nvidia-legacy-340xx-kernel-340.108.
+ .
+ This legacy version is the last release that supports the following GPUs:
+ GeForce 205 [GT218], GeForce 210 [GT216], GeForce 210 [GT218],
+ GeForce 305M [GT218M], GeForce 310 [GT218], GeForce 310M [GT218M],
+ GeForce 315 [GT216], GeForce 315 [GT218], GeForce 315M [GT218M],
+ GeForce 320M [MCP89], GeForce 405 [GT216], GeForce 405 [GT218],
+ GeForce 8100 [C77], GeForce 8200 [C77], GeForce 8200M [C77],
+ GeForce 8200M G [C77], GeForce 8200M G [MCP79], GeForce 8300 [C77],
+ GeForce 8300 GS [G84], GeForce 8300 GS [G86], GeForce 8300 GS [G98],
+ GeForce 8400 [G98], GeForce 8400 GS [G84], GeForce 8400 GS [G86],
+ GeForce 8400 GS Rev. 2 [G98], GeForce 8400 GS Rev. 3 [GT218],
+ GeForce 8400 SE [G86], GeForce 8400M G [G86M], GeForce 8400M GS [G86M],
+ GeForce 8400M GT [G86M], GeForce 8500 GT [G86], GeForce 8600 GS [G84],
+ GeForce 8600 GT [G84], GeForce 8600 GTS [G84], GeForce 8600M GS [G86M],
+ GeForce 8600M GT [G84M], GeForce 8700M GT [G84M], GeForce 8800 GS [G92],
+ GeForce 8800 GT [G92], GeForce 8800 GTS [G80], GeForce 8800 GTS 512 [G92],
+ GeForce 8800 GTX [G80], GeForce 8800 Ultra [G80], GeForce 8800M GTS [G92M],
+ GeForce 8800M GTX [G92M], GeForce 9100 [C78], GeForce 9100M G [C77],
+ GeForce 9100M G [C79], GeForce 9200 [C77], GeForce 9200 [C79],
+ GeForce 9200M GS [G98M], GeForce 9300 [C79], GeForce 9300/ION [C79],
+ GeForce 9300 GE [G98], GeForce 9300 GS [G98], GeForce 9300 GS Rev. 2 [GT218],
+ GeForce 9300 SE [G98], GeForce 9300M G [G86M], GeForce 9300M GS [G98M],
+ GeForce 9400 [C79], GeForce 9400 [MCP7A], GeForce 9400 GT [G86],
+ GeForce 9400 GT [G96], GeForce 9400M [C79], GeForce 9400M [ION VGA],
+ GeForce 9400M G [C79], GeForce 9500 GS [G96], GeForce 9500 GT [G96],
+ GeForce 9500M G [G96M], GeForce 9500M GS [G84M], GeForce 9600 GS [G94],
+ GeForce 9600 GSO 512 [G94], GeForce 9600 GSO [G92], GeForce 9600 GSO [G94],
+ GeForce 9600 GT [G94], GeForce 9600M GS [G96M], GeForce 9600M GT [G96M],
+ GeForce 9650 S [G96], GeForce 9650M GS [G84M], GeForce 9650M GT [G96M],
+ GeForce 9700M GT [G96M], GeForce 9700M GTS [G94M], GeForce 9800 GT [G92],
+ GeForce 9800 GTX [G92], GeForce 9800 GTX+ [G92], GeForce 9800 GX2 [G92],
+ GeForce 9800M GS [G94M], GeForce 9800M GT [G92M], GeForce 9800M GTS [G94M],
+ GeForce 9800M GTX [G92M], GeForce G 100 [G98], GeForce G 102M [C79],
+ GeForce G 103M [G98M], GeForce G 105M [G98M], GeForce G 105M [GT218M],
+ GeForce G 110M [G96M], GeForce G 210 [GT218], GeForce G 210M [GT218M],
+ GeForce GT 120 [G96], GeForce GT 120M [G96M], GeForce GT 130 [G94],
+ GeForce GT 130M [G96M], GeForce GT 140 [G94], GeForce GT 220 [GT215],
+ GeForce GT 220 [GT216], GeForce GT 220/315 [GT215], GeForce GT 220M [G96M],
+ GeForce GT 230 OEM [G92], GeForce GT 230 [G94], GeForce GT 230M [GT216M],
+ GeForce GT 240 [GT215], GeForce GT 240M [GT216M], GeForce GT 320 [GT215],
+ GeForce GT 320M [GT216M], GeForce GT 325M [GT216M], GeForce GT 330 [G92],
+ GeForce GT 330 [GT215], GeForce GT 330M [GT216M], GeForce GT 335M [GT215M],
+ GeForce GT 340 [GT215], GeForce GT 415 [GT216], GeForce GTS 150M [G94M],
+ GeForce GTS 160M [G94M], GeForce GTS 240 [G92], GeForce GTS 250 [G92],
+ GeForce GTS 250M [GT215M], GeForce GTS 260M [GT215M],
+ GeForce GTS 350M [GT215M], GeForce GTS 360M [GT215M],
+ GeForce GTX 260 [GT200], GeForce GTX 260M [G92M], GeForce GTX 275 [GT200b],
+ GeForce GTX 280 [GT200], GeForce GTX 280M [G92M], GeForce GTX 285 [GT200b],
+ GeForce GTX 285M [G92M], GeForce GTX 295 [GT200], GeForce GTX 295 [GT200b],
+ HICx16 + Graphics [G98], ION VGA, ION LE VGA, ION [C79], ION [GT218],
+ ION 2 [GT218], NVS 300 [GT218], NVS 2100M [GT218M], NVS 3100M [GT218M],
+ NVS 5100M [GT216M], Quadro 400 [GT216GL], Quadro CX [GT200GL],
+ Quadro FX 360M [G86GLM], Quadro FX 370 [G84GL], Quadro FX 370 LP [G98GL],
+ Quadro FX 370M [G98GLM], Quadro FX 380 [G96GL], Quadro FX 380 LP [GT218GL],
+ Quadro FX 380M [GT218GLM], Quadro FX 570 [G84GL], Quadro FX 570M [G84GLM],
+ Quadro FX 580 [G96GL], Quadro FX 770M [G96GLM], Quadro FX 880M [GT216GLM],
+ Quadro FX 1600M [G84GLM], Quadro FX 1700 [G84GL], Quadro FX 1700M [G96GLM],
+ Quadro FX 1800 [G94GL], Quadro FX 1800M [GT215GLM], Quadro FX 2700M [G94GLM],
+ Quadro FX 2800M [G92GLM], Quadro FX 3600M [G92GLM], Quadro FX 3700 [G92GL],
+ Quadro FX 3700M [G92GLM], Quadro FX 3800 [GT200GL], Quadro FX 3800M [G92GLM],
+ Quadro FX 4600 [G80GL], Quadro FX 4700 X2 [G92GL], Quadro FX 4800 [GT200GL],
+ Quadro FX 5600 [G80GL], Quadro FX 5800 [GT200GL], Quadro NVS 130M [G86M],
+ Quadro NVS 135M [G86M], Quadro NVS 140M [G86M], Quadro NVS 150M [G98M],
+ Quadro NVS 160M [G98M], Quadro NVS 290 [G86], Quadro NVS 295 [G98],
+ Quadro NVS 320M [G84GLM], Quadro NVS 420 [G98], Quadro NVS 450 [G98],
+ Quadro Plex 2200 D2 [GT200GL], Quadro Plex 2200 S4 [GT200GL],
+ Quadro VX 200 [G92GL], Tesla C870 [G80GL], Tesla C1060 [GT200GL],
+ Tesla M1060 [GT200GL], nForce 720a [C77], nForce 730a [C77],
+ nForce 730i [C79], nForce 750a SLI [C77], nForce 760i SLI [C79],
+ nForce 780a SLI [C77], nForce 980a SLI [C77], GRID K1 [GK107GL],
+ GRID K2 [GK104GL], GRID K340 [GK107GL].
+ .
+ There are several "more modern" GPUs supported by this package, too, but the
+ updated drivers in the newer legacy packages or the current nvidia-driver
+ package usually provide more features and better support.
+ Look at the other legacy packages for older cards.
+ .
+ See /usr/share/doc/nvidia-legacy-340xx-driver/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ Building the kernel module has been tested up to Linux 6.14.
+
+Package: nvidia-legacy-340xx-driver-bin
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 333
+Depends: nvidia-legacy-340xx-alternative (= 340.108-25), libc6 (>= 2.2.5), libnvidia-legacy-340xx-ml1 (>= 319) | libnvidia-ml.so.1 (>= 319)
+Recommends: nvidia-legacy-340xx-driver
+Conflicts: nvidia-driver-bin-340.108
+Provides: nvidia-driver-bin-340.108
+Filename: ./nvidia-legacy-340xx-driver-bin_340.108-25_amd64.deb
+Size: 151304
+MD5sum: a00bac2d5e2870e7d78d10d82c72d706
+SHA1: 8660562770c0d15dd5d22fad31b7f3be49565598
+SHA256: 3f22e1eaab5b03de07939d8a2167345b2216fb84662023420111a38ecebb979b
+Section: non-free/x11
+Priority: optional
+Homepage: https://www.nvidia.com
+Description: NVIDIA driver support binaries (340xx legacy version)
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ This package contains supporting binaries for the driver.
+
+Package: nvidia-legacy-340xx-driver-libs
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 88
+Depends: libgl1-nvidia-legacy-340xx-glx (= 340.108-25), libegl1-nvidia-legacy-340xx (= 340.108-25)
+Recommends: nvidia-legacy-340xx-driver-libs-i386, libgles1-nvidia-legacy-340xx (= 340.108-25), libgles2-nvidia-legacy-340xx (= 340.108-25), libnvidia-legacy-340xx-encode1 (= 340.108-25), libnvidia-legacy-340xx-cfg1 (= 340.108-25)
+Provides: nvidia-driver-libs-any
+Filename: ./nvidia-legacy-340xx-driver-libs_340.108-25_amd64.deb
+Size: 71440
+MD5sum: 00ba2c775002cf18ce28716a8aca2d77
+SHA1: 39dccb4c6228a51dc1bb74704ce80f8b23c0ca52
+SHA256: 4dcdff889e757f0dd956edb6c15e382aca864353ab05c0ecaa669389e78c75b5
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.nvidia.com
+Description: NVIDIA metapackage (OpenGL/GLX/EGL/GLES libraries) (340xx legacy version)
+ This metapackage depends on the NVIDIA binary libraries
+ that provide optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server.
+
+Package: nvidia-legacy-340xx-kernel-dkms
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 15595
+Pre-Depends: nvidia-installer-cleanup
+Depends: nvidia-legacy-340xx-kernel-support--v1, dkms (>= 2.1.0.0)
+Recommends: nvidia-legacy-340xx-driver (>= 340.108) | libnvidia-legacy-340xx-cuda1 (>= 340.108)
+Provides: nvidia-kernel-dkms-any (= 340.108), nvidia-legacy-340xx-kernel-340.108
+Filename: ./nvidia-legacy-340xx-kernel-dkms_340.108-25_amd64.deb
+Size: 3999980
+MD5sum: d8a61ea1209e51a5fa0d45ec91d3d285
+SHA1: 2718eba7eb0c0898c9a7f1e4aee351e03d18abf7
+SHA256: f94a06f0dd4b3e233c0b0a5a131185a731b4ce5decf21ba2f29afb9c4ad46373
+Section: non-free/kernel
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.nvidia.com
+Description: NVIDIA binary kernel module DKMS source (340xx legacy version)
+ This package builds the NVIDIA binary kernel modules needed by
+ nvidia-legacy-340xx-driver, using DKMS.
+ Provided that you have the kernel header packages installed, the kernel
+ module will be built for your running kernel and automatically rebuilt for
+ any new kernel headers that are installed.
+ .
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ This legacy version is the last release that supports the following GPUs:
+ GeForce 205 [GT218], GeForce 210 [GT216], GeForce 210 [GT218],
+ GeForce 305M [GT218M], GeForce 310 [GT218], GeForce 310M [GT218M],
+ GeForce 315 [GT216], GeForce 315 [GT218], GeForce 315M [GT218M],
+ GeForce 320M [MCP89], GeForce 405 [GT216], GeForce 405 [GT218],
+ GeForce 8100 [C77], GeForce 8200 [C77], GeForce 8200M [C77],
+ GeForce 8200M G [C77], GeForce 8200M G [MCP79], GeForce 8300 [C77],
+ GeForce 8300 GS [G84], GeForce 8300 GS [G86], GeForce 8300 GS [G98],
+ GeForce 8400 [G98], GeForce 8400 GS [G84], GeForce 8400 GS [G86],
+ GeForce 8400 GS Rev. 2 [G98], GeForce 8400 GS Rev. 3 [GT218],
+ GeForce 8400 SE [G86], GeForce 8400M G [G86M], GeForce 8400M GS [G86M],
+ GeForce 8400M GT [G86M], GeForce 8500 GT [G86], GeForce 8600 GS [G84],
+ GeForce 8600 GT [G84], GeForce 8600 GTS [G84], GeForce 8600M GS [G86M],
+ GeForce 8600M GT [G84M], GeForce 8700M GT [G84M], GeForce 8800 GS [G92],
+ GeForce 8800 GT [G92], GeForce 8800 GTS [G80], GeForce 8800 GTS 512 [G92],
+ GeForce 8800 GTX [G80], GeForce 8800 Ultra [G80], GeForce 8800M GTS [G92M],
+ GeForce 8800M GTX [G92M], GeForce 9100 [C78], GeForce 9100M G [C77],
+ GeForce 9100M G [C79], GeForce 9200 [C77], GeForce 9200 [C79],
+ GeForce 9200M GS [G98M], GeForce 9300 [C79], GeForce 9300/ION [C79],
+ GeForce 9300 GE [G98], GeForce 9300 GS [G98], GeForce 9300 GS Rev. 2 [GT218],
+ GeForce 9300 SE [G98], GeForce 9300M G [G86M], GeForce 9300M GS [G98M],
+ GeForce 9400 [C79], GeForce 9400 [MCP7A], GeForce 9400 GT [G86],
+ GeForce 9400 GT [G96], GeForce 9400M [C79], GeForce 9400M [ION VGA],
+ GeForce 9400M G [C79], GeForce 9500 GS [G96], GeForce 9500 GT [G96],
+ GeForce 9500M G [G96M], GeForce 9500M GS [G84M], GeForce 9600 GS [G94],
+ GeForce 9600 GSO 512 [G94], GeForce 9600 GSO [G92], GeForce 9600 GSO [G94],
+ GeForce 9600 GT [G94], GeForce 9600M GS [G96M], GeForce 9600M GT [G96M],
+ GeForce 9650 S [G96], GeForce 9650M GS [G84M], GeForce 9650M GT [G96M],
+ GeForce 9700M GT [G96M], GeForce 9700M GTS [G94M], GeForce 9800 GT [G92],
+ GeForce 9800 GTX [G92], GeForce 9800 GTX+ [G92], GeForce 9800 GX2 [G92],
+ GeForce 9800M GS [G94M], GeForce 9800M GT [G92M], GeForce 9800M GTS [G94M],
+ GeForce 9800M GTX [G92M], GeForce G 100 [G98], GeForce G 102M [C79],
+ GeForce G 103M [G98M], GeForce G 105M [G98M], GeForce G 105M [GT218M],
+ GeForce G 110M [G96M], GeForce G 210 [GT218], GeForce G 210M [GT218M],
+ GeForce GT 120 [G96], GeForce GT 120M [G96M], GeForce GT 130 [G94],
+ GeForce GT 130M [G96M], GeForce GT 140 [G94], GeForce GT 220 [GT215],
+ GeForce GT 220 [GT216], GeForce GT 220/315 [GT215], GeForce GT 220M [G96M],
+ GeForce GT 230 OEM [G92], GeForce GT 230 [G94], GeForce GT 230M [GT216M],
+ GeForce GT 240 [GT215], GeForce GT 240M [GT216M], GeForce GT 320 [GT215],
+ GeForce GT 320M [GT216M], GeForce GT 325M [GT216M], GeForce GT 330 [G92],
+ GeForce GT 330 [GT215], GeForce GT 330M [GT216M], GeForce GT 335M [GT215M],
+ GeForce GT 340 [GT215], GeForce GT 415 [GT216], GeForce GTS 150M [G94M],
+ GeForce GTS 160M [G94M], GeForce GTS 240 [G92], GeForce GTS 250 [G92],
+ GeForce GTS 250M [GT215M], GeForce GTS 260M [GT215M],
+ GeForce GTS 350M [GT215M], GeForce GTS 360M [GT215M],
+ GeForce GTX 260 [GT200], GeForce GTX 260M [G92M], GeForce GTX 275 [GT200b],
+ GeForce GTX 280 [GT200], GeForce GTX 280M [G92M], GeForce GTX 285 [GT200b],
+ GeForce GTX 285M [G92M], GeForce GTX 295 [GT200], GeForce GTX 295 [GT200b],
+ HICx16 + Graphics [G98], ION VGA, ION LE VGA, ION [C79], ION [GT218],
+ ION 2 [GT218], NVS 300 [GT218], NVS 2100M [GT218M], NVS 3100M [GT218M],
+ NVS 5100M [GT216M], Quadro 400 [GT216GL], Quadro CX [GT200GL],
+ Quadro FX 360M [G86GLM], Quadro FX 370 [G84GL], Quadro FX 370 LP [G98GL],
+ Quadro FX 370M [G98GLM], Quadro FX 380 [G96GL], Quadro FX 380 LP [GT218GL],
+ Quadro FX 380M [GT218GLM], Quadro FX 570 [G84GL], Quadro FX 570M [G84GLM],
+ Quadro FX 580 [G96GL], Quadro FX 770M [G96GLM], Quadro FX 880M [GT216GLM],
+ Quadro FX 1600M [G84GLM], Quadro FX 1700 [G84GL], Quadro FX 1700M [G96GLM],
+ Quadro FX 1800 [G94GL], Quadro FX 1800M [GT215GLM], Quadro FX 2700M [G94GLM],
+ Quadro FX 2800M [G92GLM], Quadro FX 3600M [G92GLM], Quadro FX 3700 [G92GL],
+ Quadro FX 3700M [G92GLM], Quadro FX 3800 [GT200GL], Quadro FX 3800M [G92GLM],
+ Quadro FX 4600 [G80GL], Quadro FX 4700 X2 [G92GL], Quadro FX 4800 [GT200GL],
+ Quadro FX 5600 [G80GL], Quadro FX 5800 [GT200GL], Quadro NVS 130M [G86M],
+ Quadro NVS 135M [G86M], Quadro NVS 140M [G86M], Quadro NVS 150M [G98M],
+ Quadro NVS 160M [G98M], Quadro NVS 290 [G86], Quadro NVS 295 [G98],
+ Quadro NVS 320M [G84GLM], Quadro NVS 420 [G98], Quadro NVS 450 [G98],
+ Quadro Plex 2200 D2 [GT200GL], Quadro Plex 2200 S4 [GT200GL],
+ Quadro VX 200 [G92GL], Tesla C870 [G80GL], Tesla C1060 [GT200GL],
+ Tesla M1060 [GT200GL], nForce 720a [C77], nForce 730a [C77],
+ nForce 730i [C79], nForce 750a SLI [C77], nForce 760i SLI [C79],
+ nForce 780a SLI [C77], nForce 980a SLI [C77], GRID K1 [GK107GL],
+ GRID K2 [GK104GL], GRID K340 [GK107GL].
+ .
+ There are several "more modern" GPUs supported by this package, too, but the
+ updated drivers in the newer legacy packages or the current nvidia-driver
+ package usually provide more features and better support.
+ Look at the other legacy packages for older cards.
+ .
+ See /usr/share/doc/nvidia-legacy-340xx-kernel-dkms/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ This package contains the blobs for building kernel modules for the
+ amd64 architecture.
+ Building the kernel modules has been tested up to Linux 6.14.
+
+Package: nvidia-legacy-340xx-kernel-source
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 3971
+Depends: debhelper (>= 10), module-assistant, quilt
+Recommends: nvidia-legacy-340xx-kernel-support--v1
+Suggests: nvidia-legacy-340xx-driver (>= 340.108)
+Breaks: module-assistant (<< 0.11.6~)
+Filename: ./nvidia-legacy-340xx-kernel-source_340.108-25_amd64.deb
+Size: 4046832
+MD5sum: 7354425191f50e4fe4645080846f52e8
+SHA1: 92e5c89e3e4a0ae6f4c385a9b0aa51e92fe4f0d4
+SHA256: b1f3d91458d173310bbb770254c9b5928feda981ad1ff7342ae50d84e0522b81
+Section: non-free/kernel
+Priority: optional
+Homepage: https://www.nvidia.com
+Description: NVIDIA binary kernel module source (340xx legacy version)
+ This package provides the source for the NVIDIA binary kernel modules
+ needed by nvidia-legacy-340xx-driver in a form suitable
+ for use by module-assistant.
+ .
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ PLEASE read /usr/share/doc/nvidia-legacy-340xx-kernel-source/README.Debian.gz
+ for building information. If you want the kernel module to be automatically
+ installed via DKMS, install nvidia-legacy-340xx-kernel-dkms instead.
+ .
+ This legacy version is the last release that supports the following GPUs:
+ GeForce 205 [GT218], GeForce 210 [GT216], GeForce 210 [GT218],
+ GeForce 305M [GT218M], GeForce 310 [GT218], GeForce 310M [GT218M],
+ GeForce 315 [GT216], GeForce 315 [GT218], GeForce 315M [GT218M],
+ GeForce 320M [MCP89], GeForce 405 [GT216], GeForce 405 [GT218],
+ GeForce 8100 [C77], GeForce 8200 [C77], GeForce 8200M [C77],
+ GeForce 8200M G [C77], GeForce 8200M G [MCP79], GeForce 8300 [C77],
+ GeForce 8300 GS [G84], GeForce 8300 GS [G86], GeForce 8300 GS [G98],
+ GeForce 8400 [G98], GeForce 8400 GS [G84], GeForce 8400 GS [G86],
+ GeForce 8400 GS Rev. 2 [G98], GeForce 8400 GS Rev. 3 [GT218],
+ GeForce 8400 SE [G86], GeForce 8400M G [G86M], GeForce 8400M GS [G86M],
+ GeForce 8400M GT [G86M], GeForce 8500 GT [G86], GeForce 8600 GS [G84],
+ GeForce 8600 GT [G84], GeForce 8600 GTS [G84], GeForce 8600M GS [G86M],
+ GeForce 8600M GT [G84M], GeForce 8700M GT [G84M], GeForce 8800 GS [G92],
+ GeForce 8800 GT [G92], GeForce 8800 GTS [G80], GeForce 8800 GTS 512 [G92],
+ GeForce 8800 GTX [G80], GeForce 8800 Ultra [G80], GeForce 8800M GTS [G92M],
+ GeForce 8800M GTX [G92M], GeForce 9100 [C78], GeForce 9100M G [C77],
+ GeForce 9100M G [C79], GeForce 9200 [C77], GeForce 9200 [C79],
+ GeForce 9200M GS [G98M], GeForce 9300 [C79], GeForce 9300/ION [C79],
+ GeForce 9300 GE [G98], GeForce 9300 GS [G98], GeForce 9300 GS Rev. 2 [GT218],
+ GeForce 9300 SE [G98], GeForce 9300M G [G86M], GeForce 9300M GS [G98M],
+ GeForce 9400 [C79], GeForce 9400 [MCP7A], GeForce 9400 GT [G86],
+ GeForce 9400 GT [G96], GeForce 9400M [C79], GeForce 9400M [ION VGA],
+ GeForce 9400M G [C79], GeForce 9500 GS [G96], GeForce 9500 GT [G96],
+ GeForce 9500M G [G96M], GeForce 9500M GS [G84M], GeForce 9600 GS [G94],
+ GeForce 9600 GSO 512 [G94], GeForce 9600 GSO [G92], GeForce 9600 GSO [G94],
+ GeForce 9600 GT [G94], GeForce 9600M GS [G96M], GeForce 9600M GT [G96M],
+ GeForce 9650 S [G96], GeForce 9650M GS [G84M], GeForce 9650M GT [G96M],
+ GeForce 9700M GT [G96M], GeForce 9700M GTS [G94M], GeForce 9800 GT [G92],
+ GeForce 9800 GTX [G92], GeForce 9800 GTX+ [G92], GeForce 9800 GX2 [G92],
+ GeForce 9800M GS [G94M], GeForce 9800M GT [G92M], GeForce 9800M GTS [G94M],
+ GeForce 9800M GTX [G92M], GeForce G 100 [G98], GeForce G 102M [C79],
+ GeForce G 103M [G98M], GeForce G 105M [G98M], GeForce G 105M [GT218M],
+ GeForce G 110M [G96M], GeForce G 210 [GT218], GeForce G 210M [GT218M],
+ GeForce GT 120 [G96], GeForce GT 120M [G96M], GeForce GT 130 [G94],
+ GeForce GT 130M [G96M], GeForce GT 140 [G94], GeForce GT 220 [GT215],
+ GeForce GT 220 [GT216], GeForce GT 220/315 [GT215], GeForce GT 220M [G96M],
+ GeForce GT 230 OEM [G92], GeForce GT 230 [G94], GeForce GT 230M [GT216M],
+ GeForce GT 240 [GT215], GeForce GT 240M [GT216M], GeForce GT 320 [GT215],
+ GeForce GT 320M [GT216M], GeForce GT 325M [GT216M], GeForce GT 330 [G92],
+ GeForce GT 330 [GT215], GeForce GT 330M [GT216M], GeForce GT 335M [GT215M],
+ GeForce GT 340 [GT215], GeForce GT 415 [GT216], GeForce GTS 150M [G94M],
+ GeForce GTS 160M [G94M], GeForce GTS 240 [G92], GeForce GTS 250 [G92],
+ GeForce GTS 250M [GT215M], GeForce GTS 260M [GT215M],
+ GeForce GTS 350M [GT215M], GeForce GTS 360M [GT215M],
+ GeForce GTX 260 [GT200], GeForce GTX 260M [G92M], GeForce GTX 275 [GT200b],
+ GeForce GTX 280 [GT200], GeForce GTX 280M [G92M], GeForce GTX 285 [GT200b],
+ GeForce GTX 285M [G92M], GeForce GTX 295 [GT200], GeForce GTX 295 [GT200b],
+ HICx16 + Graphics [G98], ION VGA, ION LE VGA, ION [C79], ION [GT218],
+ ION 2 [GT218], NVS 300 [GT218], NVS 2100M [GT218M], NVS 3100M [GT218M],
+ NVS 5100M [GT216M], Quadro 400 [GT216GL], Quadro CX [GT200GL],
+ Quadro FX 360M [G86GLM], Quadro FX 370 [G84GL], Quadro FX 370 LP [G98GL],
+ Quadro FX 370M [G98GLM], Quadro FX 380 [G96GL], Quadro FX 380 LP [GT218GL],
+ Quadro FX 380M [GT218GLM], Quadro FX 570 [G84GL], Quadro FX 570M [G84GLM],
+ Quadro FX 580 [G96GL], Quadro FX 770M [G96GLM], Quadro FX 880M [GT216GLM],
+ Quadro FX 1600M [G84GLM], Quadro FX 1700 [G84GL], Quadro FX 1700M [G96GLM],
+ Quadro FX 1800 [G94GL], Quadro FX 1800M [GT215GLM], Quadro FX 2700M [G94GLM],
+ Quadro FX 2800M [G92GLM], Quadro FX 3600M [G92GLM], Quadro FX 3700 [G92GL],
+ Quadro FX 3700M [G92GLM], Quadro FX 3800 [GT200GL], Quadro FX 3800M [G92GLM],
+ Quadro FX 4600 [G80GL], Quadro FX 4700 X2 [G92GL], Quadro FX 4800 [GT200GL],
+ Quadro FX 5600 [G80GL], Quadro FX 5800 [GT200GL], Quadro NVS 130M [G86M],
+ Quadro NVS 135M [G86M], Quadro NVS 140M [G86M], Quadro NVS 150M [G98M],
+ Quadro NVS 160M [G98M], Quadro NVS 290 [G86], Quadro NVS 295 [G98],
+ Quadro NVS 320M [G84GLM], Quadro NVS 420 [G98], Quadro NVS 450 [G98],
+ Quadro Plex 2200 D2 [GT200GL], Quadro Plex 2200 S4 [GT200GL],
+ Quadro VX 200 [G92GL], Tesla C870 [G80GL], Tesla C1060 [GT200GL],
+ Tesla M1060 [GT200GL], nForce 720a [C77], nForce 730a [C77],
+ nForce 730i [C79], nForce 750a SLI [C77], nForce 760i SLI [C79],
+ nForce 780a SLI [C77], nForce 980a SLI [C77], GRID K1 [GK107GL],
+ GRID K2 [GK104GL], GRID K340 [GK107GL].
+ .
+ There are several "more modern" GPUs supported by this package, too, but the
+ updated drivers in the newer legacy packages or the current nvidia-driver
+ package usually provide more features and better support.
+ Look at the other legacy packages for older cards.
+ .
+ See /usr/share/doc/nvidia-legacy-340xx-kernel-source/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ This package contains the blobs for building kernel modules for the
+ amd64 architecture.
+ Building the kernel modules has been tested up to Linux 6.14.
+
+Package: nvidia-legacy-340xx-kernel-support
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 105
+Depends: nvidia-legacy-340xx-alternative (= 340.108-25), nvidia-legacy-340xx-alternative--kmod-alias, nvidia-kernel-common (>= 20151021), nvidia-modprobe
+Breaks: glx-alternative-nvidia (<< 0.6.91)
+Replaces: glx-alternative-nvidia (<< 0.6.91)
+Provides: nvidia-kernel-support-any, nvidia-legacy-340xx-kernel-support--v1
+Filename: ./nvidia-legacy-340xx-kernel-support_340.108-25_amd64.deb
+Size: 72540
+MD5sum: 3f41eff6a543ba85267bb8461052117b
+SHA1: 0b11e4448e9c7563f2bb3d7f9e7a4f56592b2157
+SHA256: 234cb4e78f4311b9f8b370e68ad0904681a753fea8b65a9e1d9a0a85b66cb75b
+Section: non-free/kernel
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.nvidia.com
+Description: NVIDIA binary kernel module support files (340xx legacy version)
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ This package provides supporting configuration for the kernel module.
+
+Package: nvidia-legacy-340xx-opencl-icd
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 13896
+Depends: nvidia-opencl-common, ocl-icd-libopencl1 | nvidia-libopencl1 | libopencl1, nvidia-legacy-340xx-alternative (= 340.108-25), libnvidia-legacy-340xx-cuda1 (= 340.108-25), libnvidia-legacy-340xx-compiler (= 340.108-25), libc6 (>= 2.34)
+Enhances: libopencl1
+Provides: opencl-icd
+Filename: ./nvidia-legacy-340xx-opencl-icd_340.108-25_amd64.deb
+Size: 4452004
+MD5sum: 07da031fd627d2ef9f86a39ba9bd8903
+SHA1: f83f6d8627d38e0319c0d9c69b0ffd95893bbd44
+SHA256: 881669ee95c4f36292047697a158bef2c1ac041092c254e15bfa9daaa1d2e77f
+Section: non-free/libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.nvidia.com
+Description: NVIDIA OpenCL installable client driver (ICD) (340xx legacy version)
+ OpenCL (Open Computing Language) is a multivendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ This package provides the NVIDIA installable client driver (ICD) for OpenCL
+ which supports NVIDIA GPUs. This ICD supports OpenCL 1.x only.
+
+Package: nvidia-legacy-340xx-smi
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 354
+Depends: nvidia-legacy-340xx-alternative (= 340.108-25), libnvidia-legacy-340xx-ml1 (= 340.108-25), libc6 (>= 2.34)
+Recommends: nvidia-legacy-340xx-kernel-dkms (= 340.108-25) | nvidia-legacy-340xx-kernel-340.108
+Suggests: nvidia-legacy-340xx-kernel-dkms (>= 340.108) | nvidia-legacy-340xx-kernel-source (>= 340.108)
+Filename: ./nvidia-legacy-340xx-smi_340.108-25_amd64.deb
+Size: 156436
+MD5sum: 60ccc7caf5ab4913422b7b98ceec2154
+SHA1: e228d2a0d0ea37591536c45d103a9d7ada164696
+SHA256: 58455887a7f6cb30aa4896a991f825b55a84dd3f4f46c635f575647024275a26
+Section: non-free/utils
+Priority: optional
+Homepage: https://www.nvidia.com
+Description: NVIDIA System Management Interface (340xx legacy version)
+ The NVIDIA Management Library (NVML) provides a monitoring and management API.
+ The application "nvidia-smi" is the NVIDIA System Management Interface (NVSMI)
+ and provides a command line interface to this functionality.
+ .
+ See the output from the --help command line option for supported models and
+ further information.
+
+Package: nvidia-legacy-340xx-vdpau-driver
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 2118
+Pre-Depends: nvidia-installer-cleanup
+Depends: libvdpau1, nvidia-legacy-340xx-alternative (= 340.108-25), libc6 (>= 2.2.5), libx11-6, libxext6
+Recommends: nvidia-legacy-340xx-kernel-dkms (= 340.108-25) | nvidia-legacy-340xx-kernel-340.108
+Suggests: nvidia-legacy-340xx-kernel-dkms (>= 340.108) | nvidia-legacy-340xx-kernel-source (>= 340.108)
+Enhances: libvdpau1
+Provides: vdpau-driver
+Filename: ./nvidia-legacy-340xx-vdpau-driver_340.108-25_amd64.deb
+Size: 909080
+MD5sum: 4a9301edbfe82c8da4f1a1515dc0004f
+SHA1: b4fffd68e5cfe0c564889657192a385254c3bd50
+SHA256: 6e457702637d3cc4f6fa2c2088bbd5cbcdaf034b5039bae1ab2bc2a0402b8e13
+Section: non-free/video
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.nvidia.com
+Description: Video Decode and Presentation API for Unix - NVIDIA driver (340xx legacy)
+ These libraries provide the Video Decode and Presentation API for Unix.
+ They provide accelerated video playback (incl. H.264) for the supported
+ graphics cards.
+ .
+ This package contains the NVIDIA VDPAU driver.
+ .
+ See /usr/share/doc/nvidia-legacy-340xx-vdpau-driver/README.txt.gz
+ for more information.
+ .
+ Please see the nvidia-legacy-340xx-kernel-dkms or
+ nvidia-legacy-340xx-kernel-source packages
+ for building the kernel module required by this package.
+ This will provide nvidia-legacy-340xx-kernel-340.108.
+
+Package: nvidia-settings-legacy-340xx
+Version: 340.108-7
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 1966
+Pre-Depends: nvidia-installer-cleanup
+Depends: nvidia-legacy-340xx-alternative, libc6 (>= 2.34), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.12.0), libgtk2.0-0 (>= 2.8.0), libjansson4 (>= 2.14), libpango-1.0-0 (>= 1.14.0), libx11-6 (>= 2:1.4.99.1), libxext6, libxxf86vm1
+Recommends: libgl1-nvidia-legacy-340xx-glx, nvidia-legacy-340xx-vdpau-driver
+Filename: ./nvidia-settings-legacy-340xx_340.108-7_amd64.deb
+Size: 740572
+MD5sum: 976a1d0d9638b3391859955c9efa80df
+SHA1: 661927e497bcf7dc1a2e63910052dd839911a074
+SHA256: 534e95725d7702880561a3b7fe1f73bfedc4a2ff0d31e081d057ca53b533a867
+Section: contrib/x11
+Priority: optional
+Homepage: https://download.nvidia.com/XFree86/nvidia-settings/
+Description: tool for configuring the NVIDIA graphics driver (340xx legacy version)
+ The nvidia-settings utility is a tool for configuring the NVIDIA
+ Linux graphics driver.  It operates by communicating with the NVIDIA
+ X driver, querying and updating state as appropriate.  This
+ communication is done with the NV-CONTROL X extension.
+ .
+ Values such as brightness and gamma, XVideo attributes, temperature,
+ and OpenGL settings can be queried and configured via nvidia-settings.
+
+Package: nvidia-settings-legacy-340xx-dbgsym
+Source: nvidia-settings-legacy-340xx
+Version: 340.108-7
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 64
+Depends: nvidia-settings-legacy-340xx (= 340.108-7)
+Filename: ./nvidia-settings-legacy-340xx-dbgsym_340.108-7_amd64.deb
+Size: 49980
+MD5sum: 6082855090664c2664a745b0bbf01db0
+SHA1: d32c3dc1395cc14ff6ffba0d01d934bc2d5655fe
+SHA256: 6f4b632b848e0e4a238563de42e2eb4ae8bf13501dfc9a5600df314e4610d9c0
+Section: contrib/debug
+Priority: optional
+Description: debug symbols for nvidia-settings-legacy-340xx
+Build-Ids: c300011ed95f258fddab85cc649c882265bbf8ee
+
+Package: xserver-xorg-video-nvidia-legacy-340xx
+Source: nvidia-graphics-drivers-legacy-340xx
+Version: 340.108-25
+Architecture: amd64
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Installed-Size: 26006
+Pre-Depends: nvidia-installer-cleanup
+Depends: libnvidia-legacy-340xx-glcore (= 340.108-25), nvidia-legacy-340xx-alternative (= 340.108-25), nvidia-support, xorg-video-abi-25 | xorg-video-abi-24 | xorg-video-abi-23 | xorg-video-abi-20 | xorg-video-abi-19 | xorg-video-abi-18 | xorg-video-abi-15 | xorg-video-abi-14 | xorg-video-abi-13 | xorg-video-abi-12 | xorg-video-abi-11 | xorg-video-abi-10 | xorg-video-abi-8 | xorg-video-abi-6.0, xserver-xorg-core (<< 2:21.99), libc6 (>= 2.2.5)
+Recommends: nvidia-legacy-340xx-driver (>= 340.108), nvidia-legacy-340xx-vdpau-driver (>= 340.108), nvidia-legacy-340xx-kernel-dkms (= 340.108-25) | nvidia-legacy-340xx-kernel-340.108, nvidia-settings-legacy-340xx (>= 340)
+Suggests: nvidia-legacy-340xx-kernel-dkms (>= 340.108) | nvidia-legacy-340xx-kernel-source (>= 340.108)
+Breaks: glx-alternative-nvidia (<< 0.6.91)
+Replaces: glx-alternative-nvidia (<< 0.6.91)
+Provides: xorg-driver-video, xserver-xorg-video-nvidia-any
+Filename: ./xserver-xorg-video-nvidia-legacy-340xx_340.108-25_amd64.deb
+Size: 2776588
+MD5sum: 6c12386e27bb8aa362f1841b50d82bb2
+SHA1: d04493eb221e680cdf6f836e64dd9c98d52409dc
+SHA256: a3fe2017debd5688e7056726001f659898edc841a8bcb7959a2b0571e893d084
+Section: non-free/x11
+Priority: optional
+Homepage: https://www.nvidia.com
+Description: NVIDIA binary Xorg driver (340xx legacy version)
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
+ for graphics cards using NVIDIA chip sets.
+ .
+ Please see the nvidia-legacy-340xx-kernel-dkms or
+ nvidia-legacy-340xx-kernel-source packages
+ for building the kernel module required by this package.
+ This will provide nvidia-legacy-340xx-kernel-340.108.
+ .
+ This legacy version is the last release that supports the following GPUs:
+ GeForce 205 [GT218], GeForce 210 [GT216], GeForce 210 [GT218],
+ GeForce 305M [GT218M], GeForce 310 [GT218], GeForce 310M [GT218M],
+ GeForce 315 [GT216], GeForce 315 [GT218], GeForce 315M [GT218M],
+ GeForce 320M [MCP89], GeForce 405 [GT216], GeForce 405 [GT218],
+ GeForce 8100 [C77], GeForce 8200 [C77], GeForce 8200M [C77],
+ GeForce 8200M G [C77], GeForce 8200M G [MCP79], GeForce 8300 [C77],
+ GeForce 8300 GS [G84], GeForce 8300 GS [G86], GeForce 8300 GS [G98],
+ GeForce 8400 [G98], GeForce 8400 GS [G84], GeForce 8400 GS [G86],
+ GeForce 8400 GS Rev. 2 [G98], GeForce 8400 GS Rev. 3 [GT218],
+ GeForce 8400 SE [G86], GeForce 8400M G [G86M], GeForce 8400M GS [G86M],
+ GeForce 8400M GT [G86M], GeForce 8500 GT [G86], GeForce 8600 GS [G84],
+ GeForce 8600 GT [G84], GeForce 8600 GTS [G84], GeForce 8600M GS [G86M],
+ GeForce 8600M GT [G84M], GeForce 8700M GT [G84M], GeForce 8800 GS [G92],
+ GeForce 8800 GT [G92], GeForce 8800 GTS [G80], GeForce 8800 GTS 512 [G92],
+ GeForce 8800 GTX [G80], GeForce 8800 Ultra [G80], GeForce 8800M GTS [G92M],
+ GeForce 8800M GTX [G92M], GeForce 9100 [C78], GeForce 9100M G [C77],
+ GeForce 9100M G [C79], GeForce 9200 [C77], GeForce 9200 [C79],
+ GeForce 9200M GS [G98M], GeForce 9300 [C79], GeForce 9300/ION [C79],
+ GeForce 9300 GE [G98], GeForce 9300 GS [G98], GeForce 9300 GS Rev. 2 [GT218],
+ GeForce 9300 SE [G98], GeForce 9300M G [G86M], GeForce 9300M GS [G98M],
+ GeForce 9400 [C79], GeForce 9400 [MCP7A], GeForce 9400 GT [G86],
+ GeForce 9400 GT [G96], GeForce 9400M [C79], GeForce 9400M [ION VGA],
+ GeForce 9400M G [C79], GeForce 9500 GS [G96], GeForce 9500 GT [G96],
+ GeForce 9500M G [G96M], GeForce 9500M GS [G84M], GeForce 9600 GS [G94],
+ GeForce 9600 GSO 512 [G94], GeForce 9600 GSO [G92], GeForce 9600 GSO [G94],
+ GeForce 9600 GT [G94], GeForce 9600M GS [G96M], GeForce 9600M GT [G96M],
+ GeForce 9650 S [G96], GeForce 9650M GS [G84M], GeForce 9650M GT [G96M],
+ GeForce 9700M GT [G96M], GeForce 9700M GTS [G94M], GeForce 9800 GT [G92],
+ GeForce 9800 GTX [G92], GeForce 9800 GTX+ [G92], GeForce 9800 GX2 [G92],
+ GeForce 9800M GS [G94M], GeForce 9800M GT [G92M], GeForce 9800M GTS [G94M],
+ GeForce 9800M GTX [G92M], GeForce G 100 [G98], GeForce G 102M [C79],
+ GeForce G 103M [G98M], GeForce G 105M [G98M], GeForce G 105M [GT218M],
+ GeForce G 110M [G96M], GeForce G 210 [GT218], GeForce G 210M [GT218M],
+ GeForce GT 120 [G96], GeForce GT 120M [G96M], GeForce GT 130 [G94],
+ GeForce GT 130M [G96M], GeForce GT 140 [G94], GeForce GT 220 [GT215],
+ GeForce GT 220 [GT216], GeForce GT 220/315 [GT215], GeForce GT 220M [G96M],
+ GeForce GT 230 OEM [G92], GeForce GT 230 [G94], GeForce GT 230M [GT216M],
+ GeForce GT 240 [GT215], GeForce GT 240M [GT216M], GeForce GT 320 [GT215],
+ GeForce GT 320M [GT216M], GeForce GT 325M [GT216M], GeForce GT 330 [G92],
+ GeForce GT 330 [GT215], GeForce GT 330M [GT216M], GeForce GT 335M [GT215M],
+ GeForce GT 340 [GT215], GeForce GT 415 [GT216], GeForce GTS 150M [G94M],
+ GeForce GTS 160M [G94M], GeForce GTS 240 [G92], GeForce GTS 250 [G92],
+ GeForce GTS 250M [GT215M], GeForce GTS 260M [GT215M],
+ GeForce GTS 350M [GT215M], GeForce GTS 360M [GT215M],
+ GeForce GTX 260 [GT200], GeForce GTX 260M [G92M], GeForce GTX 275 [GT200b],
+ GeForce GTX 280 [GT200], GeForce GTX 280M [G92M], GeForce GTX 285 [GT200b],
+ GeForce GTX 285M [G92M], GeForce GTX 295 [GT200], GeForce GTX 295 [GT200b],
+ HICx16 + Graphics [G98], ION VGA, ION LE VGA, ION [C79], ION [GT218],
+ ION 2 [GT218], NVS 300 [GT218], NVS 2100M [GT218M], NVS 3100M [GT218M],
+ NVS 5100M [GT216M], Quadro 400 [GT216GL], Quadro CX [GT200GL],
+ Quadro FX 360M [G86GLM], Quadro FX 370 [G84GL], Quadro FX 370 LP [G98GL],
+ Quadro FX 370M [G98GLM], Quadro FX 380 [G96GL], Quadro FX 380 LP [GT218GL],
+ Quadro FX 380M [GT218GLM], Quadro FX 570 [G84GL], Quadro FX 570M [G84GLM],
+ Quadro FX 580 [G96GL], Quadro FX 770M [G96GLM], Quadro FX 880M [GT216GLM],
+ Quadro FX 1600M [G84GLM], Quadro FX 1700 [G84GL], Quadro FX 1700M [G96GLM],
+ Quadro FX 1800 [G94GL], Quadro FX 1800M [GT215GLM], Quadro FX 2700M [G94GLM],
+ Quadro FX 2800M [G92GLM], Quadro FX 3600M [G92GLM], Quadro FX 3700 [G92GL],
+ Quadro FX 3700M [G92GLM], Quadro FX 3800 [GT200GL], Quadro FX 3800M [G92GLM],
+ Quadro FX 4600 [G80GL], Quadro FX 4700 X2 [G92GL], Quadro FX 4800 [GT200GL],
+ Quadro FX 5600 [G80GL], Quadro FX 5800 [GT200GL], Quadro NVS 130M [G86M],
+ Quadro NVS 135M [G86M], Quadro NVS 140M [G86M], Quadro NVS 150M [G98M],
+ Quadro NVS 160M [G98M], Quadro NVS 290 [G86], Quadro NVS 295 [G98],
+ Quadro NVS 320M [G84GLM], Quadro NVS 420 [G98], Quadro NVS 450 [G98],
+ Quadro Plex 2200 D2 [GT200GL], Quadro Plex 2200 S4 [GT200GL],
+ Quadro VX 200 [G92GL], Tesla C870 [G80GL], Tesla C1060 [GT200GL],
+ Tesla M1060 [GT200GL], nForce 720a [C77], nForce 730a [C77],
+ nForce 730i [C79], nForce 750a SLI [C77], nForce 760i SLI [C79],
+ nForce 780a SLI [C77], nForce 980a SLI [C77], GRID K1 [GK107GL],
+ GRID K2 [GK104GL], GRID K340 [GK107GL].
+ .
+ There are several "more modern" GPUs supported by this package, too, but the
+ updated drivers in the newer legacy packages or the current nvidia-driver
+ package usually provide more features and better support.
+ Look at the other legacy packages for older cards.
+ .
+ See /usr/share/doc/nvidia-legacy-340xx-driver/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+
