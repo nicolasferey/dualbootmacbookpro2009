@@ -54,6 +54,20 @@ Extracting b43/ucode22_mimo.fw
 ```
 If you reboot you should see Wifi network somewhere in your desktop manager.
 
+### Install grub2
+
+For installing grub, remove all version of grub, and install grub2
+
+- ```sudo apt remove grub``
+- ```sudo apt install grub2``
+
+Configure your grub to boot Windows 10 and Debian 12 and other things if you want 
+
+
+
+
+
+
 ### Install the NVidia 340 firmware debian package (nvidia-legacy-340...) and its depedency (available here) for this specific computer
  - download the NVIDIA 340 Debian compiled packages in /nvidia (available in repository)
  - add this line in ```deb [trusted=yes] file:/nvidia ./``` in ```/etc/apt/sources.list```
