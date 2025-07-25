@@ -35,6 +35,25 @@ It's strongly advice to set up a USB key with et rEFIng boot loader [https://www
 
 ### Install the Wifi BT4322 firmware debian package and its depedency (available here)
 
+Copy the 3 files aboot wifi driver BT4322 available in the repository in a directory, go to the directory, and : 
+- ```sudo dpkg -i b43-fwcutter_019-14_amd64.deb```
+- ```sudo dpkg -i firmware-b43-installer_019-14_all.deb```
+
+If everything is ok the process ends by : 
+
+```
+...
+Extracting b43/n0bsinitvals17.fw
+Extracting b43/a0g1initvals5.fw
+Extracting b43/n0initvals24.fw
+Extracting b43/lp1initvals20.fw
+Extracting b43/a0g0bsinitvals5.fw
+Extracting b43/ucode9.fw
+Extracting b43/ucode5.fw
+Extracting b43/ucode22_mimo.fw
+```
+If you reboot you should see Wifi network somewhere in your desktop manager.
+
 ### Install the NVidia 340 firmware debian package (nvidia-legacy-340...) and its depedency (available here) for this specific computer
  - download the NVIDIA 340 Debian compiled packages in /nvidia (available in repository)
  - add this line in ```deb [trusted=yes] file:/nvidia ./``` in ```/etc/apt/sources.list```
